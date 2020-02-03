@@ -1,0 +1,49 @@
+footer{
+    background: url(../img/fondo.jpg);
+    animation: movimiento2 10s infinite linear alternate;
+    background-size: 200%;
+}
+
+@keyframes movimiento2{
+    from {
+        background-position: top left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.marca-logo{
+    width: 50%;
+    margin: auto;
+    margin-bottom: var(--espacios-contenido);
+}
+
+.marca-logo img{
+    width: 10%;
+}
+
+footer p{
+    margin-top: var(--espacios);
+    padding: 10px;
+    text-align: center;
+}
+
+
+#copyright{
+    color: black;
+}
+
+.change-lang{
+    cursor: pointer;
+}
+
+#es{
+    display: none;
+    border: 1px solid rgb(146, 145, 145);
+    background-color: rgba(31, 19, 100, 0.4);
+}
+
+#en{
+    border: 1px solid rgb(117, 113, 113);
+    background-color: rgba(40, 25, 128, 0.4);
+}

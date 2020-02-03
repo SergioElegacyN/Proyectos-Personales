@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Movimiento de Login</title>
+</head>
+<body>
+    <form id="register-form">
+        <input id="username" type="text" placeholder="username">
+        <input id="password" type="text" placeholder="password">
+        <input id="email" type="text" placeholder="email">
+        <button>create</button>
+        <p class="message">Already Registered? <a href="#">Login</a></p>
+    </form>
+
+    <form id="login-form">
+        <input type="text" id="user" placeholder="username" name="as">
+        <input type="text" id="pass" placeholder="password" name="123">
+        <button type="button" onclick="check(this.form)">Log in</button>
+        <p class="message">Dont have an account? <a href="#">Register</a></p>
+        </form>
+
+    <p>
+        Hint:
+            <ul>username : as</ul>
+            <ul>password : 123</ul>
+        Redirect to youtube
+    </p>
+
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+
+
+</html>

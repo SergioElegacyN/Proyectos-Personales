@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barra de Carga</title>
+</head>
+<body>
+    <div class="container-bar">
+        <div class="bar"></script>
+    </div>
+
+    <button onclick="fillBar(2)">Start</button>
+    <button onclick="emptyBar(2)">Restart</button>
+
+    <script>
+    function fillBar(seconds){
+        const bar = document.querySelector('.bar');
+        bar.style.transition = `${seconds}s linear width`
+        bar.style.width = '100%';
+    }
+
+    function emptyBar(seconds){
+        const bar = document.querySelector('.bar');
+        bar.style.transition = `${seconds}s linear width`
+        bar.style.width = '0%';
+    }
+    </script>
+
+    <style>
+    body{
+        background-color: lightgrey;
+    }
+
+    .container-bar{
+        width: 200px;
+        height: 30px;
+        margin: '40px';
+        background-color: grey;
+    }
+
+    .bar{
+        background-color: green;
+        height: 100%;
+        width: 0%;
+    }
+    </style>
+</body>
+</html>

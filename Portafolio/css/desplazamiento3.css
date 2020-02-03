@@ -1,0 +1,193 @@
+:root{
+    --color1: rgb(252, 249, 249);
+    --color2: rgba(23, 180, 83, 0.788);
+    --color3: rgba(11, 194, 211, 0.623);
+    --fondo: #f2f2f2;
+    --titulos: 23px;
+    --margenes: 60px;
+    --espacios: 10px;
+    --espacios-contenido: 45px;
+}
+
+.contenedor{
+
+    margin: auto;
+    padding: var(--margenes) 0;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contenedor h3{
+    font-size: var(--titulos);
+    color: var(--color1);
+    margin-bottom: var(--espacios);
+}
+
+.contenedor p{
+    font-size: var(--titulos);
+    font-weight: 300;
+    color: var(--color1)
+}
+
+.contenedor ul{
+    color: var(--color1)
+}
+
+.after::after{
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: var(--espacios);
+    width: 100px;
+    height: 2px;
+    background: var(--color1);
+    margin-bottom: var(--espacios-contenido);
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-card{
+    width: 47%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    height: 400px;
+}
+
+.portafolio{
+    height: 80%;
+}
+
+.content-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-diseño{
+    height: 20%;
+    width: 100%;
+    padding: var(--espacios) 0;
+}
+
+.texto-diseño>h4{
+    color: #f2f2f2;
+}
+
+.about{
+    background: linear-gradient(to bottom, 
+    rgba(211, 135, 20, 0.6),
+    rgba(29, 241, 171, 0.6),
+    rgba(7, 109, 150, 0.45)
+    ), url(../img/fondo.jpg);
+    height: auto;
+    background-size: 240%;
+    animation: moverDaI infinite alternate ease 33s;
+}
+
+@keyframes moverDaI{
+    from{
+        background-position: top left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.servicios{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    margin: auto;
+    flex: wrap;
+}
+
+.caja-servicios>h4{
+    margin-bottom: var(--espacios);
+    font-style: italic;
+}
+
+.caja-servicios>p{
+    text-align: center;
+}
+
+.botones-work{
+    overflow: hidden;
+}
+
+.botones-work li{
+    display: inline-block;
+    text-align: center;
+    margin-left: var(--espacios);
+    margin-bottom: var(--espacios-contenido);
+    padding: 6px 12px;
+    border: 1px solid var(--color1);
+    list-style: none;
+    color: var(--color1);
+}
+
+.botones-work li:hover{
+    color: #fff;
+    cursor: pointer;
+    animation: botonWorkColor ease 2s;
+    background-color: var(--color3);
+}
+
+@keyframes botonWorkColor{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.botones-work .active{
+    background: red;
+    color: #fff;
+}
+
+.galeria-work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria-work .cont-work{
+    width: 31%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: var(--espacios-contenido);
+}
+
+.img-work{
+    height: 90%;
+    width: 100%;
+}
+
+.img-work img{
+    height: 100%;
+    width: 100%;
+}
+
+.textos-work{
+    height: 10%;
+}
+
+.textos-work>h4{
+    line-height: 30px;
+    font-weight: 300;
+    color: #f2f2f2;
+}
+
+main{
+    background: -webkit-linear-gradient(left, rgb(219, 144, 5),rgb(23, 180, 83),rgb(11, 194, 211));
+}
+
+#tittrabajo, #titdiseño, #titservicio{
+    font-style: italic;
+}
